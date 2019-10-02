@@ -8,16 +8,11 @@
 
 import Foundation
 import RealmSwift
-// Use Realm to have an auto updating user.
+
 class User: Object {
     
     @objc dynamic var fName: String = ""
     @objc dynamic var lName: String = ""
-    @objc dynamic var gender: String = ""
-    
-    @objc dynamic var height: Int = 0
-    @objc dynamic var weight: Int = 0
-    
     let weightData = List<WeightInput>()
     
 }
