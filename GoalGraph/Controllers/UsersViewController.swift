@@ -40,9 +40,7 @@ class UsersViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
 
     @IBAction func addUserPressed(_ sender: MDCFloatingButton) {
-        
-        
-        
+        performSegue(withIdentifier: "goToAddUser", sender: sender)
     }
     
 

@@ -8,11 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1F0C18AC23455844003B0F68 /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0C18AB23455844003B0F68 /* Quotes.swift */; };
-		1F0C18AE23455D9B003B0F68 /* AddUserModal.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F0C18AD23455D9B003B0F68 /* AddUserModal.xib */; };
-		1F0C18B023455F5A003B0F68 /* AddUserModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0C18AF23455F5A003B0F68 /* AddUserModal.swift */; };
 		1F90931B2341C59100AF8F6C /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90931A2341C59100AF8F6C /* UsersViewController.swift */; };
 		1F90931D2341C71800AF8F6C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90931C2341C71800AF8F6C /* User.swift */; };
 		1F90931F2341C79F00AF8F6C /* WeightInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90931E2341C79F00AF8F6C /* WeightInput.swift */; };
+		1F909DA82345BC210041CB33 /* AddUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F909DA72345BC210041CB33 /* AddUserViewController.swift */; };
 		1F93BF1E233EC0EC007951A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F93BF1D233EC0EC007951A2 /* AppDelegate.swift */; };
 		1F93BF23233EC0EC007951A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F93BF21233EC0EC007951A2 /* Main.storyboard */; };
 		1F93BF25233EC0ED007951A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F93BF24233EC0ED007951A2 /* Assets.xcassets */; };
@@ -23,11 +22,10 @@
 
 /* Begin PBXFileReference section */
 		1F0C18AB23455844003B0F68 /* Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotes.swift; sourceTree = "<group>"; };
-		1F0C18AD23455D9B003B0F68 /* AddUserModal.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddUserModal.xib; sourceTree = "<group>"; };
-		1F0C18AF23455F5A003B0F68 /* AddUserModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserModal.swift; sourceTree = "<group>"; };
 		1F90931A2341C59100AF8F6C /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
 		1F90931C2341C71800AF8F6C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1F90931E2341C79F00AF8F6C /* WeightInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightInput.swift; sourceTree = "<group>"; };
+		1F909DA72345BC210041CB33 /* AddUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserViewController.swift; sourceTree = "<group>"; };
 		1F93BF1A233EC0EC007951A2 /* GoalGraph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoalGraph.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F93BF1D233EC0EC007951A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F93BF22233EC0EC007951A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -57,7 +55,7 @@
 			children = (
 				1FEAA5D12341C00A00926EDA /* InitialViewController.swift */,
 				1F90931A2341C59100AF8F6C /* UsersViewController.swift */,
-				1F0C18AF23455F5A003B0F68 /* AddUserModal.swift */,
+				1F909DA72345BC210041CB33 /* AddUserViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -76,7 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				1F93BF21233EC0EC007951A2 /* Main.storyboard */,
-				1F0C18AD23455D9B003B0F68 /* AddUserModal.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -192,7 +189,6 @@
 			files = (
 				1F93BF28233EC0ED007951A2 /* LaunchScreen.storyboard in Resources */,
 				1F93BF25233EC0ED007951A2 /* Assets.xcassets in Resources */,
-				1F0C18AE23455D9B003B0F68 /* AddUserModal.xib in Resources */,
 				1F93BF23233EC0EC007951A2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,8 +246,8 @@
 				1F93BF1E233EC0EC007951A2 /* AppDelegate.swift in Sources */,
 				1F0C18AC23455844003B0F68 /* Quotes.swift in Sources */,
 				1F90931F2341C79F00AF8F6C /* WeightInput.swift in Sources */,
+				1F909DA82345BC210041CB33 /* AddUserViewController.swift in Sources */,
 				1F90931B2341C59100AF8F6C /* UsersViewController.swift in Sources */,
-				1F0C18B023455F5A003B0F68 /* AddUserModal.swift in Sources */,
 				1FEAA5D22341C00A00926EDA /* InitialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

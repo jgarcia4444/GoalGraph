@@ -22,7 +22,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6x-Zc-Mho">
                                         <rect key="frame" x="0.0" y="0.0" width="94" height="35"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FAT-fI-6El" customClass="MDCButton">
@@ -39,7 +39,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.077162586152553558" green="0.064540423452854156" blue="0.27018669247627258" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="sFg-QP-6Jy" firstAttribute="centerX" secondItem="36S-AF-LJu" secondAttribute="centerX" id="PrU-KL-fSz"/>
                             <constraint firstItem="sFg-QP-6Jy" firstAttribute="top" secondItem="hsT-HS-VNn" secondAttribute="top" constant="200" id="rTw-Qy-2mv"/>
@@ -56,10 +56,10 @@
             </objects>
             <point key="canvasLocation" x="617" y="-178"/>
         </scene>
-        <!--Users View Controller-->
+        <!--Welcome-->
         <scene sceneID="Qw3-B9-2jn">
             <objects>
-                <viewController id="huk-kE-ef9" customClass="UsersViewController" customModule="GoalGraph" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Welcome" id="huk-kE-ef9" customClass="UsersViewController" customModule="GoalGraph" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LRz-5G-mnv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -115,24 +115,77 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="U1H-Sa-gLr"/>
                     </view>
+                    <connections>
+                        <segue destination="qRb-4v-YXD" kind="show" identifier="goToAddUser" id="NbA-yg-pDw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RFP-j3-HKt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1404" y="-133.00492610837438"/>
+        </scene>
+        <!--Add User-->
+        <scene sceneID="xTY-BA-kSn">
+            <objects>
+                <viewController id="qRb-4v-YXD" customClass="AddUserViewController" customModule="GoalGraph" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xza-o2-1cn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="yR8-2h-0fn">
+                                <rect key="frame" x="75" y="275" width="225" height="174"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sI8-m4-Ec5">
+                                        <rect key="frame" x="0.0" y="0.0" width="225" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="225" id="aJz-Up-FyA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eeo-wO-STA">
+                                        <rect key="frame" x="0.0" y="66" width="225" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="225" id="wp5-3B-yfm"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdC-e6-dfe">
+                                        <rect key="frame" x="88.666666666666657" y="132" width="48" height="42"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                        <state key="normal" title="Add">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="yR8-2h-0fn" firstAttribute="top" secondItem="cl7-Ig-a00" secondAttribute="top" constant="135" id="mKM-4j-whk"/>
+                            <constraint firstItem="yR8-2h-0fn" firstAttribute="centerX" secondItem="Xza-o2-1cn" secondAttribute="centerX" id="nLS-pu-07c"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cl7-Ig-a00"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add User" id="dFg-mr-YIf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4NC-Fg-56f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2277.5999999999999" y="-382.01970443349757"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="y52-ha-17K">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GiD-Os-a9D" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="3w9-UW-NwC">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" largeTitles="YES" id="3w9-UW-NwC">
                         <rect key="frame" x="0.0" y="44" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="largeTitleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
