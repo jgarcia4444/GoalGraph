@@ -27,7 +27,7 @@ class InitialViewController: UIViewController {
         
     }
 
-    @IBAction func nextPagePressed(_ sender: MDCButton) {
+    @IBAction func nextPagePressed(_ sender: MDCRaisedButton) {
         
         performSegue(withIdentifier: "goToUsers", sender: Any.self)
         

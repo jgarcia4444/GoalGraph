@@ -7,10 +7,15 @@
 //
 
 import UIKit
-import MaterialComponents
+import MaterialComponents.MaterialButtons
+import MaterialComponents.MaterialTextFields
+
 
 class AddUserViewController: UIViewController {
 
+    @IBOutlet weak var fName: MDCTextField!
+    
+    @IBOutlet weak var lName: MDCTextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +23,15 @@ class AddUserViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        
+        
+        
+    }
     
     
-
+   
+    @IBAction func addButtonPressed(_ sender: MDCButton) {
+    }
+    
 }
