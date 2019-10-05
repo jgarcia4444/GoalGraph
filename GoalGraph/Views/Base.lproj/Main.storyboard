@@ -126,39 +126,40 @@
         <!--Add User-->
         <scene sceneID="xTY-BA-kSn">
             <objects>
-                <viewController id="qRb-4v-YXD" customClass="AddUserViewController" customModule="GoalGraph" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qRb-4v-YXD" customClass="AddUserViewController" customModule="GoalGraph" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xza-o2-1cn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="yR8-2h-0fn">
-                                <rect key="frame" x="75" y="275" width="225" height="174"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="O9k-mH-gpA">
+                                <rect key="frame" x="75" y="239" width="225" height="188"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sI8-m4-Ec5" customClass="MDCTextField">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6PT-rJ-edk" customClass="MDCTextField">
                                         <rect key="frame" x="0.0" y="0.0" width="225" height="34"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="225" id="aJz-Up-FyA"/>
+                                            <constraint firstAttribute="width" constant="225" id="9U2-sl-9A9"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eeo-wO-STA" customClass="MDCTextField">
-                                        <rect key="frame" x="0.0" y="66" width="225" height="34"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tVO-Mn-cbD" customClass="MDCTextField">
+                                        <rect key="frame" x="0.0" y="73" width="225" height="34"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="225" id="wp5-3B-yfm"/>
+                                            <constraint firstAttribute="width" constant="225" id="L5m-o5-3GA"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdC-e6-dfe" customClass="MDCRaisedButton">
-                                        <rect key="frame" x="88.666666666666657" y="132" width="48" height="42"/>
-                                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="88.666666666666657" y="146" width="48" height="42"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
                                         <state key="normal" title="Add">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
                                             <action selector="addButtonPressed:" destination="qRb-4v-YXD" eventType="touchUpInside" id="v56-1a-OaV"/>
+                                            <segue destination="MYK-bp-R1U" kind="unwind" unwindAction="myUnwindActionWithUnwindSegue:" id="0pb-E9-wTy"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -166,20 +167,21 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="yR8-2h-0fn" firstAttribute="top" secondItem="cl7-Ig-a00" secondAttribute="top" constant="135" id="mKM-4j-whk"/>
-                            <constraint firstItem="yR8-2h-0fn" firstAttribute="centerX" secondItem="Xza-o2-1cn" secondAttribute="centerX" id="nLS-pu-07c"/>
+                            <constraint firstItem="O9k-mH-gpA" firstAttribute="centerX" secondItem="Xza-o2-1cn" secondAttribute="centerX" id="6UW-7F-57U"/>
+                            <constraint firstItem="O9k-mH-gpA" firstAttribute="top" secondItem="cl7-Ig-a00" secondAttribute="top" constant="99" id="VQr-pP-JvR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cl7-Ig-a00"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add User" id="dFg-mr-YIf"/>
                     <connections>
-                        <outlet property="fName" destination="sI8-m4-Ec5" id="d4Q-IO-joO"/>
-                        <outlet property="lName" destination="Eeo-wO-STA" id="lhF-C9-kSv"/>
+                        <outlet property="fNameTextField" destination="6PT-rJ-edk" id="jwn-pm-Mi4"/>
+                        <outlet property="lNameTextField" destination="tVO-Mn-cbD" id="ytb-hO-WIw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4NC-Fg-56f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="MYK-bp-R1U" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2277.5999999999999" y="-382.01970443349757"/>
+            <point key="canvasLocation" x="2228" y="-334.72906403940885"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="y52-ha-17K">
