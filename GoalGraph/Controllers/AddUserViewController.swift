@@ -54,8 +54,6 @@ class AddUserViewController: UIViewController, UITextFieldDelegate {
         fNameTextField.text = ""
         lNameTextField.text = ""
         
-        
-        
     }
     // TODO: - Handle validation errors.
     func verifyName(fName: String, lName: String) -> [String: String] {

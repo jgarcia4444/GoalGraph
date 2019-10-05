@@ -13,16 +13,18 @@ import MaterialComponents.MaterialButtons
 class UsersViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     let realm = try! Realm()
-    var users: [User]?
+    var users: Results<User>?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
-    @IBAction func myUnwindAction(unwindSegue: UIStoryboardSegue) {
-        
+    override func viewWillAppear(_ animated: Bool) {
+        loadUsers()
     }
+//    @IBAction func myUnwindAction(unwindSegue: UIStoryboardSegue) {
+//
+//    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return users?.count ?? 1
@@ -46,5 +48,12 @@ class UsersViewController: UIViewController, UITableViewDelegate, UITableViewDat
         performSegue(withIdentifier: "goToAddUser", sender: sender)
     }
     
+    
+    // MARK: - Load Users for table info
+    
+    func loadUsers() {
+        users = realm.objects(User.self)
+        
+    }
 
 }

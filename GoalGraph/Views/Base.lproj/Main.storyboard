@@ -159,7 +159,6 @@
                                         </state>
                                         <connections>
                                             <action selector="addButtonPressed:" destination="qRb-4v-YXD" eventType="touchUpInside" id="v56-1a-OaV"/>
-                                            <segue destination="MYK-bp-R1U" kind="unwind" unwindAction="myUnwindActionWithUnwindSegue:" id="0pb-E9-wTy"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -179,7 +178,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4NC-Fg-56f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="MYK-bp-R1U" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2228" y="-334.72906403940885"/>
         </scene>
