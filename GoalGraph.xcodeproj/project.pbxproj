@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F0056D323499DD7007D1EA2 /* UserWeightDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0056D223499DD7007D1EA2 /* UserWeightDataViewController.swift */; };
 		1F0C18AC23455844003B0F68 /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0C18AB23455844003B0F68 /* Quotes.swift */; };
 		1F90931B2341C59100AF8F6C /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90931A2341C59100AF8F6C /* UsersViewController.swift */; };
 		1F90931D2341C71800AF8F6C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90931C2341C71800AF8F6C /* User.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F0056D223499DD7007D1EA2 /* UserWeightDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserWeightDataViewController.swift; sourceTree = "<group>"; };
 		1F0C18AB23455844003B0F68 /* Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotes.swift; sourceTree = "<group>"; };
 		1F90931A2341C59100AF8F6C /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
 		1F90931C2341C71800AF8F6C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 				1FEAA5D12341C00A00926EDA /* InitialViewController.swift */,
 				1F90931A2341C59100AF8F6C /* UsersViewController.swift */,
 				1F909DA72345BC210041CB33 /* AddUserViewController.swift */,
+				1F0056D223499DD7007D1EA2 /* UserWeightDataViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F90931D2341C71800AF8F6C /* User.swift in Sources */,
+				1F0056D323499DD7007D1EA2 /* UserWeightDataViewController.swift in Sources */,
 				1F93BF1E233EC0EC007951A2 /* AppDelegate.swift in Sources */,
 				1F0C18AC23455844003B0F68 /* Quotes.swift in Sources */,
 				1F90931F2341C79F00AF8F6C /* WeightInput.swift in Sources */,

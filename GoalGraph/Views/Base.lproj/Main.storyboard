@@ -73,23 +73,23 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZXW-dY-pMY">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZXW-dY-pMY">
                                         <rect key="frame" x="24" y="103.3333333333333" width="298" height="154.66666666666663"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="UserCell" id="8xT-lf-Ivz">
-                                                <rect key="frame" x="0.0" y="28" width="298" height="43.666667938232422"/>
+                                                <rect key="frame" x="0.0" y="28" width="298" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8xT-lf-Ivz" id="Hto-6G-XIb">
-                                                    <rect key="frame" x="0.0" y="0.0" width="298" height="43.666667938232422"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="298" height="44"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </tableViewCellContentView>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <segue destination="OX7-5O-jxZ" kind="show" identifier="goToUserWeightData" id="7k1-R9-tdq"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
-                                        <connections>
-                                            <outlet property="dataSource" destination="huk-kE-ef9" id="MXb-XB-fir"/>
-                                            <outlet property="delegate" destination="huk-kE-ef9" id="x50-9p-CYd"/>
-                                        </connections>
                                     </tableView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="je5-iq-kxy" customClass="MDCFloatingButton">
                                         <rect key="frame" x="158" y="341" width="30" height="30"/>
@@ -116,6 +116,7 @@
                         <viewLayoutGuide key="safeArea" id="U1H-Sa-gLr"/>
                     </view>
                     <connections>
+                        <outlet property="usersTableView" destination="ZXW-dY-pMY" id="M1G-t3-TfQ"/>
                         <segue destination="qRb-4v-YXD" kind="show" identifier="goToAddUser" id="NbA-yg-pDw"/>
                     </connections>
                 </viewController>
@@ -179,7 +180,50 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4NC-Fg-56f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2228" y="-334.72906403940885"/>
+            <point key="canvasLocation" x="2313" y="-667"/>
+        </scene>
+        <!--User Weight Data View Controller-->
+        <scene sceneID="0sw-zi-s3X">
+            <objects>
+                <viewController id="OX7-5O-jxZ" customClass="UserWeightDataViewController" customModule="GoalGraph" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bKw-yC-Snk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAu-4S-8qb">
+                                <rect key="frame" x="153" y="140" width="68" height="36"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jiO-Zd-0XQ" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="51.666666666666657" y="387" width="272" height="229"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="272" id="qCw-80-Dge"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bAu-4S-8qb" firstAttribute="top" secondItem="CZU-rz-u7V" secondAttribute="top" id="E5A-ak-en0"/>
+                            <constraint firstItem="bAu-4S-8qb" firstAttribute="leading" secondItem="CZU-rz-u7V" secondAttribute="leading" constant="153" id="OaW-mF-7mi"/>
+                            <constraint firstItem="jiO-Zd-0XQ" firstAttribute="top" secondItem="bKw-yC-Snk" secondAttribute="top" constant="387" id="TxU-mg-mWz"/>
+                            <constraint firstItem="jiO-Zd-0XQ" firstAttribute="centerX" secondItem="bAu-4S-8qb" secondAttribute="centerX" id="WK4-5i-Kqu"/>
+                            <constraint firstItem="CZU-rz-u7V" firstAttribute="bottom" secondItem="jiO-Zd-0XQ" secondAttribute="bottom" constant="162" id="bLN-aJ-1pc"/>
+                            <constraint firstItem="jiO-Zd-0XQ" firstAttribute="centerX" secondItem="bKw-yC-Snk" secondAttribute="centerX" id="eKf-rx-Ba4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CZU-rz-u7V"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="KVh-wg-E79"/>
+                    <connections>
+                        <outlet property="chartView" destination="jiO-Zd-0XQ" id="81x-tl-IqZ"/>
+                        <outlet property="welcomeLabel" destination="bAu-4S-8qb" id="Fzz-ef-sei"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mCx-f8-XU8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2312.8000000000002" y="56.896551724137936"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="y52-ha-17K">

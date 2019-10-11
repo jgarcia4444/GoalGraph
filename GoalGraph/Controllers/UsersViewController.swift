@@ -14,10 +14,15 @@ class UsersViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
     let realm = try! Realm()
     var users: Results<User>?
+    var selectedUser: User?
     
+    @IBOutlet weak var usersTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        usersTableView.delegate = self
+        usersTableView.dataSource = self
+        
     }
     override func viewWillAppear(_ animated: Bool) {
         loadUsers()
@@ -53,7 +58,28 @@ class UsersViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func loadUsers() {
         users = realm.objects(User.self)
+    }
+    
+    // MARK: - TableView Delegate Methods
+    
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        usersTableView.deselectRow(at: indexPath, animated: true)
+        guard let user = users?[indexPath.row] else {
+            fatalError("Unable to use users Results.")
+        }
+        selectedUser = user
+        usersTableView.reloadData()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let destinationVC = segue.destination as? UserWeightDataViewController {
+            
+            destinationVC.selectedUser = self.selectedUser
+            
+        }
         
     }
+    
 
 }
