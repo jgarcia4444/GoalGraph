@@ -18,14 +18,14 @@ class UserWeightDataViewController: UIViewController {
     
     let realm = try! Realm()
     
-    var weights : List<WeightInput>?
+    var weights = List<WeightInput>()
     
     var lineChartEntry = [ChartDataEntry]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         loadWeights()
-        updateGraph(weightData: weights!)
+        updateGraph(weightData: weights)
     }
     
     
@@ -39,25 +39,25 @@ class UserWeightDataViewController: UIViewController {
         let weight1 = WeightInput()
         weight1.weight = 100
         let weight2 = WeightInput()
-        weight1.weight = 110
+        weight2.weight = 110
         let weight3 = WeightInput()
-        weight1.weight = 120
+        weight3.weight = 120
         
-        weights?.append(weight1)
-        weights?.append(weight2)
-        weights?.append(weight3)
+        weights.append(weight1)
+        weights.append(weight2)
+        weights.append(weight3)
     }
     
     func updateGraph(weightData: List<WeightInput>) {
         
-        if let weightData = weights {
+       
             
-            for i in 0..<weightData.count {
-                
-                let value = ChartDataEntry(x: Double(i), y: Double(weightData[i].weight))
-                
-                lineChartEntry.append(value)
-            }
+        for i in 0..<weights.count {
+            
+            let value = ChartDataEntry(x: Double(i), y: Double(weightData[i].weight))
+            
+            lineChartEntry.append(value)
+        }
             
             let line1 = LineChartDataSet(entries: lineChartEntry, label: "Weight")
             
@@ -66,7 +66,6 @@ class UserWeightDataViewController: UIViewController {
             let data = LineChartData()
             data.addDataSet(line1)
             chartView.data = data
-        }
         
     }
 
