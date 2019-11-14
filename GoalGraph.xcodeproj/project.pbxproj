@@ -7,34 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F0056D323499DD7007D1EA2 /* UserWeightDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0056D223499DD7007D1EA2 /* UserWeightDataViewController.swift */; };
-		1F0C18AC23455844003B0F68 /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0C18AB23455844003B0F68 /* Quotes.swift */; };
-		1F90931B2341C59100AF8F6C /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90931A2341C59100AF8F6C /* UsersViewController.swift */; };
-		1F90931D2341C71800AF8F6C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90931C2341C71800AF8F6C /* User.swift */; };
-		1F90931F2341C79F00AF8F6C /* WeightInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F90931E2341C79F00AF8F6C /* WeightInput.swift */; };
-		1F909DA82345BC210041CB33 /* AddUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F909DA72345BC210041CB33 /* AddUserViewController.swift */; };
+		1F10092F237CCDB10010A5C6 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F10092E237CCDB10010A5C6 /* WelcomeViewController.swift */; };
 		1F93BF1E233EC0EC007951A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F93BF1D233EC0EC007951A2 /* AppDelegate.swift */; };
 		1F93BF23233EC0EC007951A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F93BF21233EC0EC007951A2 /* Main.storyboard */; };
 		1F93BF25233EC0ED007951A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F93BF24233EC0ED007951A2 /* Assets.xcassets */; };
 		1F93BF28233EC0ED007951A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F93BF26233EC0ED007951A2 /* LaunchScreen.storyboard */; };
-		1FEAA5D22341C00A00926EDA /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEAA5D12341C00A00926EDA /* InitialViewController.swift */; };
 		E1CCDD71EC13D299D11AED2B /* Pods_GoalGraph.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B9C01899CD04AF80CDB005 /* Pods_GoalGraph.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1F0056D223499DD7007D1EA2 /* UserWeightDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserWeightDataViewController.swift; sourceTree = "<group>"; };
-		1F0C18AB23455844003B0F68 /* Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotes.swift; sourceTree = "<group>"; };
-		1F90931A2341C59100AF8F6C /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
-		1F90931C2341C71800AF8F6C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		1F90931E2341C79F00AF8F6C /* WeightInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightInput.swift; sourceTree = "<group>"; };
-		1F909DA72345BC210041CB33 /* AddUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserViewController.swift; sourceTree = "<group>"; };
+		1F10092E237CCDB10010A5C6 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		1F93BF1A233EC0EC007951A2 /* GoalGraph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoalGraph.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F93BF1D233EC0EC007951A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F93BF22233EC0EC007951A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1F93BF24233EC0ED007951A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F93BF27233EC0ED007951A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F93BF29233EC0ED007951A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1FEAA5D12341C00A00926EDA /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		36DBD73400612F9757A0597C /* Pods-GoalGraph.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoalGraph.debug.xcconfig"; path = "Target Support Files/Pods-GoalGraph/Pods-GoalGraph.debug.xcconfig"; sourceTree = "<group>"; };
 		B4B9C01899CD04AF80CDB005 /* Pods_GoalGraph.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoalGraph.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC6FBD0ABF5CFB3397314E6C /* Pods-GoalGraph.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoalGraph.release.xcconfig"; path = "Target Support Files/Pods-GoalGraph/Pods-GoalGraph.release.xcconfig"; sourceTree = "<group>"; };
@@ -55,10 +43,7 @@
 		1F591542234193DC00C2D582 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1FEAA5D12341C00A00926EDA /* InitialViewController.swift */,
-				1F90931A2341C59100AF8F6C /* UsersViewController.swift */,
-				1F909DA72345BC210041CB33 /* AddUserViewController.swift */,
-				1F0056D223499DD7007D1EA2 /* UserWeightDataViewController.swift */,
+				1F10092E237CCDB10010A5C6 /* WelcomeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -66,9 +51,6 @@
 		1F591543234193E700C2D582 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				1F90931C2341C71800AF8F6C /* User.swift */,
-				1F90931E2341C79F00AF8F6C /* WeightInput.swift */,
-				1F0C18AB23455844003B0F68 /* Quotes.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -245,14 +227,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F90931D2341C71800AF8F6C /* User.swift in Sources */,
-				1F0056D323499DD7007D1EA2 /* UserWeightDataViewController.swift in Sources */,
 				1F93BF1E233EC0EC007951A2 /* AppDelegate.swift in Sources */,
-				1F0C18AC23455844003B0F68 /* Quotes.swift in Sources */,
-				1F90931F2341C79F00AF8F6C /* WeightInput.swift in Sources */,
-				1F909DA82345BC210041CB33 /* AddUserViewController.swift in Sources */,
-				1F90931B2341C59100AF8F6C /* UsersViewController.swift in Sources */,
-				1FEAA5D22341C00A00926EDA /* InitialViewController.swift in Sources */,
+				1F10092F237CCDB10010A5C6 /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
