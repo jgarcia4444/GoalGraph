@@ -12,11 +12,21 @@ class WelcomeViewController: UIViewController {
     
     
     @IBOutlet weak var viewBottomLayoutConstraint: NSLayoutConstraint!
-    
+    override func viewWillAppear(_ animated: Bool) {
+        NotificationCenter.default.addObserver(self, selector: Selector(("keyboardDidShow")), name: UIView.keyboardWillShowNotification , object: nil)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
+    
+    func keyboardDidShow(_ notification: Notification) {
+        updateBottomConstraint(_: notification)
+    }
 
+    func updateBottomConstraint(_ notification: Notification) {
+        
+    }
+    
 }
